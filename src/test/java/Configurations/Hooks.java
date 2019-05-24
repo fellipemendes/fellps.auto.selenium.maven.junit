@@ -50,7 +50,7 @@ public class Hooks{
         return instance;
     }
 
-    static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
     {
         @Override
         public RemoteWebDriver initialValue()
@@ -73,7 +73,12 @@ public class Hooks{
 
     public WebDriver getDriver() // call this method to get the driver object and launch the browser
     {
-        return driver.get();
+        try {
+            return driver.get();
+        }catch (Exception e){
+            System.out.println("Erro getDriver:    " + e.getMessage());
+            return driver.get();
+        }
     }
 
     public void removeDriver() // Quits the driver and closes the browser
