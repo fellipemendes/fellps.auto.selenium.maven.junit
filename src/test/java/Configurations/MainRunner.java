@@ -14,6 +14,7 @@ import cucumber.api.junit.Cucumber;
         plugin = {
                 "pretty", "junit:target/rel.xml" ,
                 "json:target/cucumber.json",
+                "json:target/allure-results/AllureTestReport.json"
         }
 )
 
