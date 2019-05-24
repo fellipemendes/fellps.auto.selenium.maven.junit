@@ -89,8 +89,12 @@ public class Hooks{
 
     @Before
     public void TestInitialize() {
+        System.out.println("passou navegador 1");
+        Hooks.getInstance().getDriver();
+        System.out.println("passou navegador 2");
         //driver = new ChromeDriver();
         //ObjFact.start();
+        /*
         try {
             if (Navegador == "C" && Headless == true) {
                 if (Headless) {
@@ -114,6 +118,7 @@ public class Hooks{
 				options.setExperimentalOption("detach", true);
 				driver = new ChromeDriver(cdservice,options);
 				*/
+        /*
             }else if (Navegador == "F" && Headless == false) {
                 if (CI) {
                     DesiredCapabilities dc = DesiredCapabilities.firefox();
@@ -140,6 +145,8 @@ public class Hooks{
         } catch (Exception e) {
             System.out.println("--------ERRO Navegador-----------" + e.getMessage());
         }
+
+         */
     }
 
 
