@@ -73,12 +73,7 @@ public class Hooks{
 
     public WebDriver getDriver() // call this method to get the driver object and launch the browser
     {
-        try {
-            return driver.get();
-        }catch (Exception e){
-            System.out.println("Erro getDriver:    " + e.getMessage());
-            return driver.get();
-        }
+        return driver.get();
     }
 
     public void removeDriver() // Quits the driver and closes the browser
