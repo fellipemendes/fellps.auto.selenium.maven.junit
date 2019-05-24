@@ -36,6 +36,8 @@
                         -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                         -Dcucumber.options="--plugin io.qameta.allure.cucumberjvm.AllureCucumberJvm"
                     </argLine>
+                    <parallel>classes</parallel>
+                    <threadCount>3</threadCount>
                 </configuration>
             </plugin>
             <plugin>
