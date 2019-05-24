@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1411">
-              <caret line="101" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="212">
+              <caret line="134" column="99" lean-forward="true" selection-start-line="134" selection-start-column="99" selection-end-line="134" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -85,6 +85,7 @@
       <find>cucumber-jvm-deps</find>
       <find>core</find>
       <find>info.cukes</find>
+      <find />
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,8 +102,8 @@
         <option value="$PROJECT_DIR$/allure.properties" />
         <option value="$PROJECT_DIR$/src/test/java/Configurations/MainRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/Configurations/Hooks.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -112,6 +113,17 @@
         <option name="importAutomatically" value="true" />
       </MavenImportingSettings>
     </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="fellps.auto.selenium.maven.junit" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1358" />
@@ -230,9 +242,13 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_161" />
       <option name="PACKAGE_NAME" value="Configurations" />
       <option name="MAIN_CLASS_NAME" value="Configurations.MainRunner" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -310,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558726915247</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="purge">
+      <created>1558727524182</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1558727524182</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -329,7 +352,7 @@
       <window_info id="Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
@@ -343,7 +366,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Maven" weight="0.32969153" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -418,9 +441,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/Feature/basic.feature">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/fellps.auto.selenium.maven.junit.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/site/allure-maven-plugin/allure-maven.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-77" />
@@ -476,10 +496,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/fellps.auto.selenium.maven.junit.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="212">
+          <caret line="134" column="99" lean-forward="true" selection-start-line="134" selection-start-column="99" selection-end-line="134" selection-end-column="99" />
         </state>
       </provider>
     </entry>
