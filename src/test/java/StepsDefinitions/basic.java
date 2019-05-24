@@ -26,7 +26,6 @@ public class basic {
     public void i_access_Google() {
         try {
             driver.navigate().to("https://www.google.com/");
-            Thread.sleep(2*60*1000);
             oUtils.waitVisibilityOfElementLocated("name", "q");
             Hooks.capture("google's search page");
         }catch (Exception e) {

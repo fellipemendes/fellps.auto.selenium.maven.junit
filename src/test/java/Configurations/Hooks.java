@@ -100,6 +100,7 @@ public class Hooks{
                     //driver = new ChromeDriver(option);
                 }
             }else if (Navegador == "C" && Headless == false) {
+                System.out.println("passou navegador");
                 Hooks.getInstance().getDriver();
 
 
