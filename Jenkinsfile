@@ -8,6 +8,7 @@ node('master') {
     try{
 	    stage('Run tests') {
 	    withMaven(maven: 'Maven') {
+	        sh 'mvn dependency:purge-local-repository'
             sh 'mvn -Dtest=MainRunner clean test -Dwebdriver.type=remote -Dwebdriver.url=http://192.168.99.100:4444/wd/hub -Dwebdriver.cap.browserName=chrome'
 	      }
       }
