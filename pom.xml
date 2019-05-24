@@ -93,6 +93,13 @@
             <artifactId>cucumber-junit</artifactId>
             <version>1.2.5</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-core -->
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+
 
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
@@ -144,6 +151,8 @@
             <artifactId>selenium-chrome-driver</artifactId>
             <version>3.14.0</version>
         </dependency>
+
+
     </dependencies>
 
 </project>
