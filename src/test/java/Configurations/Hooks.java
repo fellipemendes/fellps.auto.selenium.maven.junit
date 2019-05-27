@@ -53,18 +53,19 @@ public class Hooks{
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
     {
         @Override
-        public RemoteWebDriver initialValue()
-        {
+        public RemoteWebDriver initialValue() {
+            System.out.println("override 1");
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
             //options.addArguments("--headless", "window-size=1366,768", "--no-sandbox");
             options.addArguments("window-size=1366,768");
             capabilities.setCapability(ChromeOptions.CAPABILITY, options);
             try {
-				driver.set(new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities));
-			} catch (MalformedURLException e) {
-				e.printStackTrace();
-			}
+                driver.set(new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities));
+            } catch (Exception e) {
+                System.out.println("erro driver set: " + e.getMessage());
+                e.printStackTrace();
+            }
             return new ChromeDriver(options); // can be replaced with other browser drivers
             //return new InternetExplorerDriver();
             //return new ChromeDriver(); // can be replaced with other browser drivers
