@@ -55,6 +55,7 @@ public class Hooks{
         @Override
         public RemoteWebDriver initialValue() {
             System.out.println("override 1");
+            System.setProperty("webdriver.chrome.driver", "");
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
             //options.addArguments("--headless", "window-size=1366,768", "--no-sandbox");
