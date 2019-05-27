@@ -55,12 +55,12 @@ public class Hooks{
         @Override
         public RemoteWebDriver initialValue() {
             System.out.println("override 1");
-            System.setProperty("webdriver.chrome.driver", "");
-            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-            ChromeOptions options = new ChromeOptions();
-            //options.addArguments("--headless", "window-size=1366,768", "--no-sandbox");
-            options.addArguments("window-size=1366,768");
-            capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+
+//            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
+//            ChromeOptions options = new ChromeOptions();
+//            //options.addArguments("--headless", "window-size=1366,768", "--no-sandbox");
+//            options.addArguments("window-size=1366,768");
+//            capabilities.setCapability(ChromeOptions.CAPABILITY, options);
             System.out.println("override 2");
             try {
                 driver.set(new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities));
@@ -70,7 +70,7 @@ public class Hooks{
                 e.printStackTrace();
             }
             System.out.println("override 4");
-            return new ChromeDriver(options); // can be replaced with other browser drivers
+            return new ChromeDriver(); // can be replaced with other browser drivers
             //return new InternetExplorerDriver();
             //return new ChromeDriver(); // can be replaced with other browser drivers
         }
