@@ -84,6 +84,7 @@ public class Hooks{
     @Before
     public void TestInitialize() {
         System.out.println("--------TEST INITIALIZE 1-----------");
+        Hooks.getInstance().getDriver();
     }
 
     @After
