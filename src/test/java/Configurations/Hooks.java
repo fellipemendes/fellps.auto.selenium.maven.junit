@@ -95,9 +95,9 @@ public class Hooks{
 
     @After
     public void TearDownTest(Scenario scenario) throws InterruptedException {
-        if (scenario.isFailed()) {
-            System.out.println("--------Scenario Failed----------- " + scenario.getStatus());
-        }
+//        if (scenario.isFailed()) {
+//            System.out.println("--------Scenario Failed----------- " + scenario.getStatus());
+//        }
         System.out.println("--------TearDown 1-----------");
         Hooks.getInstance().removeDriver();
         System.out.println("--------TearDown 2-----------");
