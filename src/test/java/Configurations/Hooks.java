@@ -51,7 +51,7 @@ public class Hooks{
         return instance;
     }
 
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
+    public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
     {
         @Override
         public RemoteWebDriver initialValue() {
