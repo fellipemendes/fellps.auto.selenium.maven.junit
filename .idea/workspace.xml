@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f325d22-a05f-49bf-a42d-f0fe407efd25" name="Default Changelist" comment="WebDriver Bonigarcia">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="9f325d22-a05f-49bf-a42d-f0fe407efd25" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/Configurations/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Configurations/Hooks.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -32,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Configurations/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="60" column="46" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="46" />
+            <state relative-caret-position="-1076">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="e#2039#2040#0" expanded="true" />
                 <element signature="e#2070#2071#0" expanded="true" />
@@ -47,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="75" column="39" lean-forward="true" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+            <state relative-caret-position="238">
+              <caret line="77" column="99" lean-forward="true" selection-start-line="77" selection-start-column="99" selection-end-line="77" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -90,6 +88,7 @@
       <find>junit</find>
       <find>cucumber</find>
       <find>jvm</find>
+      <find>org.apache.maven.plugins</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,8 +105,8 @@
         <option value="$PROJECT_DIR$/src/test/java/StepsDefinitions/login.java" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
         <option value="$PROJECT_DIR$/src/test/java/Configurations/MainRunner.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Configurations/Hooks.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Configurations/Hooks.java" />
       </list>
     </option>
   </component>
@@ -446,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558966431816</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Junit Parallel">
+      <created>1559054437318</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1559054437319</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -527,7 +533,8 @@
     <MESSAGE value="try" />
     <MESSAGE value="debug" />
     <MESSAGE value="WebDriver Bonigarcia" />
-    <option name="LAST_COMMIT_MESSAGE" value="WebDriver Bonigarcia" />
+    <MESSAGE value="Junit Parallel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Junit Parallel" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -619,23 +626,23 @@
     <entry file="file://$PROJECT_DIR$/fellps.auto.selenium.maven.junit.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="77" column="99" lean-forward="true" selection-start-line="77" selection-start-column="99" selection-end-line="77" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Configurations/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="60" column="46" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="46" />
+        <state relative-caret-position="-1076">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#2039#2040#0" expanded="true" />
             <element signature="e#2070#2071#0" expanded="true" />
             <element signature="e#1646#2245#0" expanded="true" />
             <element signature="e#2244#2245#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="75" column="39" lean-forward="true" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
         </state>
       </provider>
     </entry>
