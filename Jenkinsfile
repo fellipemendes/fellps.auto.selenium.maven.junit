@@ -11,7 +11,6 @@ node('master') {
 	        archiveArtifacts 'target/**/*'
 	        }
           }
-        }
     stage('reports') {
 	    script {
 	            allure([
@@ -21,6 +20,6 @@ node('master') {
 	                    reportBuildPolicy: 'ALWAYS',
 	                    results: [[path: 'target/allure-results']]
 	            ])
-           }
         }
-	}
+    }
+  }
