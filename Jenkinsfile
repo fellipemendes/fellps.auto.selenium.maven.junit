@@ -15,6 +15,9 @@ node('master') {
             }
           }
         }
+     finally {
+       		archiveArtifacts 'target/**/*'
+       	}
 
     stage('reports') {
 	    script {
