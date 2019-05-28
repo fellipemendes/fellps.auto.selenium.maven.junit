@@ -15,7 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class login {
 
-    public static WebDriver driver = Hooks.getInstance().getDriver();
+    private static WebDriver driver = Hooks.getInstance().getDriver();
     static WebDriverWait wait = new WebDriverWait(driver, 360);
     static Utils oUtils = new Utils();
 

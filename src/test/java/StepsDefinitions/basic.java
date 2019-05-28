@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 @Feature("Google's Search")
 public class basic {
 
-    public static WebDriver driver = Hooks.getInstance().getDriver();
+    private static WebDriver driver = Hooks.getInstance().getDriver();
     static WebDriverWait wait = new WebDriverWait(driver, 360);
     static Utils oUtils = new Utils();
 
