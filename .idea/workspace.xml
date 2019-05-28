@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f325d22-a05f-49bf-a42d-f0fe407efd25" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Configurations/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Configurations/Hooks.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,14 +22,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Configurations/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="85" column="51" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
+            <state relative-caret-position="267">
+              <caret line="96" column="77" lean-forward="true" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2039#2040#0" expanded="true" />
                 <element signature="e#2070#2071#0" expanded="true" />
                 <element signature="e#1596#2470#0" expanded="true" />
                 <element signature="e#2469#2470#0" expanded="true" />
+                <element signature="method#screenShot#0;class#Hooks#0" />
+                <element signature="method#capture#0;class#Hooks#0" />
               </folding>
             </state>
           </provider>
@@ -58,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Jenkinsfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="170">
+              <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -114,8 +117,8 @@
         <option value="$PROJECT_DIR$/src/test/java/Configurations/MainRunner.java" />
         <option value="$PROJECT_DIR$/src/test/java/StepsDefinitions/basic.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/Jenkinsfile" />
         <option value="$PROJECT_DIR$/src/test/java/StepsDefinitions/login.java" />
+        <option value="$PROJECT_DIR$/Jenkinsfile" />
         <option value="$PROJECT_DIR$/src/test/java/Configurations/Hooks.java" />
       </list>
     </option>
@@ -581,7 +584,28 @@
       <option name="project" value="LOCAL" />
       <updated>1559071958671</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Quit Driver">
+      <created>1559072246606</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1559072246606</updated>
+    </task>
+    <task id="LOCAL-00044" summary="driver.remove();">
+      <created>1559072414434</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1559072414434</updated>
+    </task>
+    <task id="LOCAL-00045" summary="artifacts">
+      <created>1559072924830</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1559072924830</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -671,7 +695,9 @@
     <MESSAGE value="JenkinsFile" />
     <MESSAGE value="Log" />
     <MESSAGE value="Quit Driver" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quit Driver" />
+    <MESSAGE value="driver.remove();" />
+    <MESSAGE value="artifacts" />
+    <option name="LAST_COMMIT_MESSAGE" value="artifacts" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -760,13 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StepsDefinitions/login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -777,16 +796,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Jenkinsfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="40" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Configurations/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="85" column="51" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
+        <state relative-caret-position="267">
+          <caret line="96" column="77" lean-forward="true" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2039#2040#0" expanded="true" />
             <element signature="e#2070#2071#0" expanded="true" />
             <element signature="e#1596#2470#0" expanded="true" />
             <element signature="e#2469#2470#0" expanded="true" />
+            <element signature="method#screenShot#0;class#Hooks#0" />
+            <element signature="method#capture#0;class#Hooks#0" />
           </folding>
         </state>
       </provider>
