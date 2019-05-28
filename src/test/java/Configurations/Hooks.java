@@ -81,7 +81,9 @@ public class Hooks{
 
     public void removeDriver() // Quits the driver and closes the browser
     {
-        driver.get().quit();
+        System.out.println("--------Remove driver 1-----------");
+        Hooks.getInstance().getDriver().quit();
+        System.out.println("--------Remove driver 2-----------");
         //-----
     }
 
@@ -93,7 +95,9 @@ public class Hooks{
 
     @After
     public void TearDownTest(Scenario scenario) throws InterruptedException {
+        System.out.println("--------TearDown 1-----------");
         Hooks.getInstance().removeDriver();
+        System.out.println("--------TearDown 2-----------");
     }
 
     public static byte[] screenShot() throws InterruptedException {
