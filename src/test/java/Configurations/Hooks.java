@@ -39,19 +39,19 @@ public class Hooks{
     static boolean Headless = false;
     public static String parentWindow = null;
 
-    public Hooks()
+    private Hooks()
     {
         //Hooks.driver = (ThreadLocal<WebDriver>) driver;
         //Do-nothing..Do not allow to initialize this class from outside
     }
-    public static Hooks instance = new Hooks();
+    private static Hooks instance = new Hooks();
 
     public static Hooks getInstance()
     {
         return instance;
     }
 
-    public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
     {
         @Override
         public RemoteWebDriver initialValue() {
@@ -79,7 +79,7 @@ public class Hooks{
         return driver.get();
     }
 
-    public void removeDriver() // Quits the driver and closes the browser
+    private void removeDriver() // Quits the driver and closes the browser
     {
         try {
             System.out.println("--------Remove driver 1-----------");
@@ -114,7 +114,7 @@ public class Hooks{
         }
     }
 
-    public static byte[] screenShot() throws InterruptedException {
+    private static byte[] screenShot() throws InterruptedException {
         Thread.sleep(300);
         byte[] screenshot;
         screenshot = ((TakesScreenshot) Hooks.getInstance().getDriver()).getScreenshotAs(OutputType.BYTES);
