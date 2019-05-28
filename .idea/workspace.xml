@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f325d22-a05f-49bf-a42d-f0fe407efd25" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/Configurations/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Configurations/Hooks.java" afterDir="false" />
-    </list>
+    <list default="true" id="9f325d22-a05f-49bf-a42d-f0fe407efd25" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Configurations/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1076">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="187">
+              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
               <folding>
                 <element signature="e#2039#2040#0" expanded="true" />
                 <element signature="e#2070#2071#0" expanded="true" />
@@ -45,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="77" column="99" lean-forward="true" selection-start-line="77" selection-start-column="99" selection-end-line="77" selection-end-column="99" />
+            <state relative-caret-position="-108">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
             </state>
           </provider>
         </entry>
@@ -87,8 +85,8 @@
       <find>driver</find>
       <find>junit</find>
       <find>cucumber</find>
-      <find>jvm</find>
       <find>org.apache.maven.plugins</find>
+      <find>jvm</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,8 +103,8 @@
         <option value="$PROJECT_DIR$/src/test/java/StepsDefinitions/login.java" />
         <option value="$PROJECT_DIR$/Jenkinsfile" />
         <option value="$PROJECT_DIR$/src/test/java/Configurations/MainRunner.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Configurations/Hooks.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -452,7 +450,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559054437319</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Junit Parallel">
+      <created>1559054690436</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1559054690436</updated>
+    </task>
+    <task id="LOCAL-00027" summary="cucumber-jvm-deps">
+      <created>1559054843005</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1559054843005</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -534,7 +546,8 @@
     <MESSAGE value="debug" />
     <MESSAGE value="WebDriver Bonigarcia" />
     <MESSAGE value="Junit Parallel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Junit Parallel" />
+    <MESSAGE value="cucumber-jvm-deps" />
+    <option name="LAST_COMMIT_MESSAGE" value="cucumber-jvm-deps" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -626,23 +639,23 @@
     <entry file="file://$PROJECT_DIR$/fellps.auto.selenium.maven.junit.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="77" column="99" lean-forward="true" selection-start-line="77" selection-start-column="99" selection-end-line="77" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Configurations/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1076">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="187">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
             <element signature="e#2039#2040#0" expanded="true" />
             <element signature="e#2070#2071#0" expanded="true" />
             <element signature="e#1646#2245#0" expanded="true" />
             <element signature="e#2244#2245#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>
