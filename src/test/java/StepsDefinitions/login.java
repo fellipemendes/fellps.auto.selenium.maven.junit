@@ -35,7 +35,8 @@ public class login {
     @Given("^realizei login no Gmail com usuário incorreto$")
     public void realizei_login_no_Gmail_com_usuário_incorreto() throws Throwable {
         try {
-            oUtils.waitVisibilityOfElementLocated("id", "identifierId");
+            Thread.sleep(3000);
+            //oUtils.waitVisibilityOfElementLocated("id", "identifierId");
             driver.findElement(By.id("identifierId")).sendKeys("123");
             driver.findElement(By.xpath("//*[@id='identifierNext']/content/span")).click();
             Thread.sleep(5000);
