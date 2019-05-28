@@ -24,6 +24,7 @@ public class basic {
     @Description("Googleeeeee")
     @Given("^I access Google$")
     public void i_access_Google() {
+        System.out.println("--------BASIC 1-----------");
         try {
             driver.navigate().to("https://www.google.com/");
             oUtils.waitVisibilityOfElementLocated("name", "q");

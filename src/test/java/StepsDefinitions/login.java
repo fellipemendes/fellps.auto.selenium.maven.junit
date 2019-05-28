@@ -22,6 +22,7 @@ public class login {
     @Step
     @Given("^I access página de login do Gmail$")
     public void i_access_página_de_login_do_Gmail() throws Throwable {
+        System.out.println("--------LOGIN 1-----------");
         driver.navigate().to("https://accounts.google.com/AccountChooser?service=mail&continue=https://mail.google.com/mail/");
         Hooks.capture("Página de Login do Gmail");
     }

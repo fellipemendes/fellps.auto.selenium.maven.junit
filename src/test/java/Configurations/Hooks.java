@@ -56,9 +56,12 @@ public class Hooks{
         public RemoteWebDriver initialValue() {
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
+            System.out.println("override 1");
             try {
                 driver.set(new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities));
+                System.out.println("override 2");
             } catch (MalformedURLException e) {
+                System.out.println("override 2 ERRO " + e.getMessage());
                 e.printStackTrace();
             }
             System.out.println("override 3");
@@ -70,6 +73,7 @@ public class Hooks{
 
     public WebDriver getDriver() // call this method to get the driver object and launch the browser
     {
+        System.out.println("--------RETURN 1-----------");
         return driver.get();
     }
 
@@ -80,7 +84,7 @@ public class Hooks{
 
     @Before
     public void TestInitialize() {
-
+        System.out.println("--------TEST INITIALIZE 1-----------");
     }
 
     @After
