@@ -76,7 +76,7 @@
 
                             <!-- UNCOMMENT BELOW 3 LINES - To execute using parallel or combination
                                 option -->
-                            <parallel>methods</parallel>
+                            <parallel>both</parallel>
                             <threadCount>2</threadCount>
                             <perCoreThreadCount>true</perCoreThreadCount>
 
