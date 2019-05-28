@@ -81,16 +81,23 @@ public class Hooks{
 
     public void removeDriver() // Quits the driver and closes the browser
     {
-        System.out.println("--------Remove driver 1-----------");
-        driver.remove();
-        System.out.println("--------Remove driver 2-----------");
-        //-----
+        try {
+            System.out.println("--------Remove driver 1-----------");
+            driver.remove();
+            System.out.println("--------Remove driver 2-----------");
+        }catch (Exception e) {
+            System.out.println("--------removeDriver ERRO-----------" + e.getMessage());
+        }
     }
 
     @Before
     public void TestInitialize() {
         System.out.println("--------TEST INITIALIZE 1-----------");
-        Hooks.getInstance().getDriver();
+        try {
+            Hooks.getInstance().getDriver();
+        }catch (Exception e) {
+            System.out.println("--------TEST INITIALIZE ERRO-----------" + e.getMessage());
+        }
     }
 
     @After
@@ -98,9 +105,13 @@ public class Hooks{
 //        if (scenario.isFailed()) {
 //            System.out.println("--------Scenario Failed----------- " + scenario.getStatus());
 //        }
-        System.out.println("--------TearDown 1-----------");
-        Hooks.getInstance().removeDriver();
-        System.out.println("--------TearDown 2-----------");
+        try {
+            System.out.println("--------TearDown 1-----------");
+            Hooks.getInstance().removeDriver();
+            System.out.println("--------TearDown 2-----------");
+        }catch (Exception e) {
+            System.out.println("--------TearDownTest ERRO-----------" + e.getMessage());
+        }
     }
 
     public static byte[] screenShot() throws InterruptedException {
