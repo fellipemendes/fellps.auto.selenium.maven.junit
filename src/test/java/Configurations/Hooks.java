@@ -12,6 +12,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import javax.imageio.ImageIO;
 
+import org.junit.BeforeClass;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -65,6 +66,8 @@ public class Hooks{
             }
             System.out.println("override 3");
             ChromeOptions options = new ChromeOptions();
+            options.addArguments("window-size=1366,768", "--no-sandbox");
+            capabilities.setCapability(ChromeOptions.CAPABILITY, options);
             System.out.println("override 4");
             return new ChromeDriver(options); // can be replaced with other browser drivers
         }
