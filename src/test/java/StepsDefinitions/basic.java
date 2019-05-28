@@ -30,7 +30,7 @@ public class basic {
             oUtils.waitVisibilityOfElementLocated("name", "q");
             Hooks.capture("google's search page");
         }catch (Exception e) {
-            System.out.println("--------ERRO E3-----------" + e.getStackTrace());
+            System.out.println("--------ERRO E3-----------" + e.getMessage());
         }
     }
 
@@ -41,7 +41,7 @@ public class basic {
             Thread.sleep(2000);
             Hooks.capture("google's search page");
         }catch (Exception e) {
-            System.out.println("--------ERRO E4-----------" + e.getStackTrace());
+            System.out.println("--------ERRO E4-----------" + e.getMessage());
         }
     }
 
@@ -54,7 +54,7 @@ public class basic {
             driver.findElement(By.name("q")).click();
             Hooks.capture("Palmeiras search result");
         }catch (Exception e) {
-            System.out.println("--------ERRO E5-----------" + e.getStackTrace());
+            System.out.println("--------ERRO E5-----------" + e.getMessage());
         }
     }
 }
