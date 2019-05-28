@@ -82,7 +82,7 @@ public class Hooks{
     public void removeDriver() // Quits the driver and closes the browser
     {
         System.out.println("--------Remove driver 1-----------");
-        Hooks.getInstance().getDriver().quit();
+        driver.remove();
         System.out.println("--------Remove driver 2-----------");
         //-----
     }
