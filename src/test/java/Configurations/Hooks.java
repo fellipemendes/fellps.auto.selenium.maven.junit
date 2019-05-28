@@ -54,6 +54,7 @@ public class Hooks{
     {
         @Override
         public RemoteWebDriver initialValue() {
+            System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
             System.out.println("override 1");
