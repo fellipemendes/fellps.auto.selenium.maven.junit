@@ -54,9 +54,7 @@ public class Hooks{
     {
         @Override
         public RemoteWebDriver initialValue() {
-            System.setProperty("webdriver.chrome.driver", "/usr/bin/google-chrome");
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-            ChromeOptions options = new ChromeOptions();
             System.out.println("override 1");
             try {
                 driver.set(new RemoteWebDriver(new URL("http://192.168.99.100:4444/wd/hub"), capabilities));
@@ -66,7 +64,7 @@ public class Hooks{
                 e.printStackTrace();
             }
             System.out.println("override 3");
-
+            ChromeOptions options = new ChromeOptions();
             System.out.println("override 4");
             return new ChromeDriver(options); // can be replaced with other browser drivers
         }
