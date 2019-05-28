@@ -37,6 +37,7 @@ public class basic {
     @Step
     @Then("^The main page will show up$")
     public void the_main_page_will_show_up() throws Throwable {
+        System.out.println("--------BASIC 2-----------");
         try {
             Thread.sleep(2000);
             Hooks.capture("google's search page");
@@ -48,6 +49,7 @@ public class basic {
     @Step
     @Given("^Search Palmeiras$")
     public void search_Palmeiras() throws Throwable {
+        System.out.println("--------BASIC 3-----------");
         try {
             Thread.sleep(2000);
             driver.findElement(By.name("q")).sendKeys("PALMEIRAS");

@@ -95,6 +95,7 @@ public class Hooks{
         System.out.println("--------TEST INITIALIZE 1-----------");
         try {
             Hooks.getInstance().getDriver();
+            System.out.println("--------TEST INITIALIZE 2-----------");
         }catch (Exception e) {
             System.out.println("--------TEST INITIALIZE ERRO-----------" + e.getMessage());
         }
