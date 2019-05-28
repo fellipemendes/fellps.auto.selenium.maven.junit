@@ -39,7 +39,7 @@ public class Hooks{
     static boolean Headless = false;
     public static String parentWindow = null;
 
-    private Hooks()
+    public Hooks()
     {
         //Hooks.driver = (ThreadLocal<WebDriver>) driver;
         //Do-nothing..Do not allow to initialize this class from outside
