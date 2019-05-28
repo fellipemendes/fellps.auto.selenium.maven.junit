@@ -74,15 +74,15 @@
 
                             <!-- UNCOMMENT BELOW 3 LINES - To execute using parallel or combination
                                 option -->
-                            <parallel>both</parallel>
+                            <!-- <parallel>both</parallel>
                             <threadCount>2</threadCount>
-                            <perCoreThreadCount>true</perCoreThreadCount>
+                            <perCoreThreadCount>true</perCoreThreadCount>-->
 
                             <!-- UNCOMMENT BELOW 3 LINES - To execute using forking or combination
                                 option -->
-                            <!-- <forkCount>2</forkCount>
+                            <forkCount>2</forkCount>
                             <reuseForks>true</reuseForks>
-                            <reportsDirectory>${project.build.directory}/failsafe-reports_${surefire.forkNumber}</reportsDirectory> -->
+                            <reportsDirectory>${project.build.directory}/failsafe-reports_${surefire.forkNumber}</reportsDirectory>
 
                         </configuration>
                     </execution>
