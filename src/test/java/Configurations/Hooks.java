@@ -1,29 +1,15 @@
 package Configurations;
 
-
-import java.awt.AWTException;
-import java.awt.Rectangle;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.image.BufferedImage;
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import javax.imageio.ImageIO;
 
-import org.junit.BeforeClass;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeDriverService;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxBinary;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -32,26 +18,20 @@ import io.qameta.allure.Attachment;
 
 
 public class Hooks{
-    public static ChromeDriverService cdservice = null;
-    public static String chromeDriverPath = "/usr/bin/chromedriver";
-    boolean CI = false;
-    String Navegador = "C";
-    static boolean Headless = false;
-    public static String parentWindow = null;
 
     public Hooks()
     {
         //Hooks.driver = (ThreadLocal<WebDriver>) driver;
         //Do-nothing..Do not allow to initialize this class from outside
     }
-    private static Hooks instance = new Hooks();
+    public static Hooks instance = new Hooks();
 
     public static Hooks getInstance()
     {
         return instance;
     }
 
-    private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
+    public static ThreadLocal<RemoteWebDriver> driver = new ThreadLocal<RemoteWebDriver>() // thread local driver object for webdriver
     {
         @Override
         public RemoteWebDriver initialValue() {
@@ -79,7 +59,7 @@ public class Hooks{
         return driver.get();
     }
 
-    private void removeDriver() // Quits the driver and closes the browser
+    public void removeDriver() // Quits the driver and closes the browser
     {
         try {
             System.out.println("--------Remove driver 1-----------");
@@ -88,6 +68,7 @@ public class Hooks{
         }catch (Exception e) {
             System.out.println("--------removeDriver ERRO-----------" + e.getMessage());
         }
+
     }
 
     @Before
