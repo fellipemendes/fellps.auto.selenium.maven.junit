@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Configurations/Hooks.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+            <state relative-caret-position="194">
+              <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2039#2040#0" expanded="true" />
@@ -120,6 +120,7 @@
       <find>jvm</find>
       <find>junit</find>
       <find>identifierId</find>
+      <find>ChromeOptions</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -315,20 +316,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558720365059</updated>
-    </task>
-    <task id="LOCAL-00009" summary="purge">
-      <created>1558727524182</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1558727524182</updated>
-    </task>
-    <task id="LOCAL-00010" summary="dependencia">
-      <created>1558728035280</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1558728035280</updated>
     </task>
     <task id="LOCAL-00011" summary="thread">
       <created>1558728984707</created>
@@ -659,7 +646,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559149557378</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="RemoteDriver">
+      <created>1559150931405</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1559150931408</updated>
+    </task>
+    <task id="LOCAL-00059" summary="RemoteDriver">
+      <created>1559151489196</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1559151489198</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -900,8 +901,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Configurations/Hooks.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+        <state relative-caret-position="194">
+          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2039#2040#0" expanded="true" />

@@ -18,7 +18,7 @@ import io.qameta.allure.Attachment;
 
 
 public class Hooks{
-    public static String chromeDriverPath_linux = "src/test/resources/driver";
+    public static String chromeDriverPath_linux = "src/test/resources/driver/chromedriver";
 
     public Hooks()
     {
