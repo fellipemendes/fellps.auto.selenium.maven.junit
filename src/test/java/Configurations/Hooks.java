@@ -51,7 +51,7 @@ public class Hooks{
                 e.printStackTrace();
             }
             System.out.println("override 3");
-            options.addArguments("webdriver.chrome.driver", chromeDriverPath_linux);
+            //options.addArguments("webdriver.chrome.driver", chromeDriverPath_linux);
             options.addArguments("window-size=1366,768", "--no-sandbox");
             capabilities.setCapability(ChromeOptions.CAPABILITY, options);
             System.out.println("override 4");
