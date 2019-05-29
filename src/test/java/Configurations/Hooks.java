@@ -42,14 +42,13 @@ public class Hooks{
 
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
-            /*
+
             try {
                 driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities));
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
 
-             */
             //options.addArguments("webdriver.chrome.driver", chromeDriverPath_linux);
             options.addArguments("window-size=1366,768", "--no-sandbox");
             capabilities.setCapability(ChromeOptions.CAPABILITY, options);
