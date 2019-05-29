@@ -29,6 +29,9 @@ public class Hooks{
 
     public static Hooks getInstance()
     {
+        if (instance == null){
+            instance = new Hooks();
+        }
         return instance;
     }
 
@@ -37,7 +40,7 @@ public class Hooks{
         @Override
         public RemoteWebDriver initialValue() {
             System.out.println("Driver Propertie");
-            System.setProperty("webdriver.chrome.driver", chromeDriverPath_linux);
+            //System.setProperty("webdriver.chrome.driver", chromeDriverPath_linux);
 
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
