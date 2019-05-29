@@ -18,6 +18,7 @@ import io.qameta.allure.Attachment;
 
 
 public class Hooks{
+    public static String chromeDriverPath_linux = "src/test/resources/driver";
 
     public Hooks()
     {
@@ -35,6 +36,8 @@ public class Hooks{
     {
         @Override
         public RemoteWebDriver initialValue() {
+            System.setProperty("webdriver.chrome.driver", chromeDriverPath_linux);
+            System.out.println("Driver Propertie");
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             System.out.println("override 1");
             try {
