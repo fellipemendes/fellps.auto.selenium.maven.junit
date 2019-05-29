@@ -36,22 +36,20 @@ public class Hooks{
 
     public static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
     {
-        @Override
         public RemoteWebDriver initialValue() {
             //System.setProperty("webdriver.chrome.driver", chromeDriverPath_linux);
 
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
 
+            //options.addArguments("webdriver.chrome.driver", chromeDriverPath_linux);
+            options.addArguments("window-size=1366,768", "--no-sandbox");
+            capabilities.setCapability(ChromeOptions.CAPABILITY, options);
             try {
                 driver.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities));
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
-
-            //options.addArguments("webdriver.chrome.driver", chromeDriverPath_linux);
-            options.addArguments("window-size=1366,768", "--no-sandbox");
-            capabilities.setCapability(ChromeOptions.CAPABILITY, options);
             return new ChromeDriver(options); // can be replaced with other browser drivers
         }
     };
@@ -74,7 +72,7 @@ public class Hooks{
     @After
     public void TearDownTest(Scenario scenario) throws InterruptedException {
         if (scenario.isFailed()) {
-            System.out.println("--------Scenario Failed----------- " + scenario.getStatus());
+            System.out.println("--------Scenario Failed----------- " + scenario.getName());
         }
         Hooks.getInstance().removeDriver();
     }
