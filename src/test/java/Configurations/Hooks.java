@@ -42,7 +42,7 @@ public class Hooks{
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
             ChromeOptions options = new ChromeOptions();
 
-            //options.addArguments("webdriver.chrome.driver", chromeDriverPath_linux);
+            options.addArguments("webdriver.chrome.driver", chromeDriverPath_linux);
             options.addArguments("window-size=1366,768", "--no-sandbox");
             capabilities.setCapability(ChromeOptions.CAPABILITY, options);
             try {
