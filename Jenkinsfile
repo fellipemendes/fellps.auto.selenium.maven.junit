@@ -7,7 +7,7 @@ node('master') {
 
     stage('Run tests') {
 	    withMaven(maven: 'Maven') {
-            sh 'mvn -Dtest=MainRunner clean test -e -Dwebdriver.type=remote -Dwebdriver.url=http://localhost:4444/wd/hub -Dwebdriver.cap.browserName=chrome'
+            sh 'mvn -Dtest=MainRunner clean test -Dwebdriver.type=remote -Dwebdriver.url=http://localhost:4444/wd/hub -Dwebdriver.cap.browserName=chrome'
 	        archiveArtifacts artifacts: 'target/**/*'
 	        }
           }
